@@ -7,11 +7,11 @@ export default function ContactForm() {
                 <div className="row">
                     <div className="form-group col-sm">
                         <label htmlFor="name-input">Name</label>
-                        <input type="text" className="form-control" id="name-input" />
+                        <input type="text" className="form-control" id="name-input" required />
                     </div>
                     <div className="form-group col-sm">
                         <label htmlFor="email-input">Email</label>
-                        <input type="email" className="form-control" id="email-input" />
+                        <input type="email" className="form-control" id="email-input" required />
                     </div>
                 </div>
                 <div className="row">
@@ -21,8 +21,8 @@ export default function ContactForm() {
                     </div>
                     <div className="form-group col-sm">
                         <label htmlFor="topic">Topic</label>
-                        <select class="custom-select" id="topic">
-                            <option selected>Topic</option>
+                        <select defaultValue="DEFAULT" className="custom-select" id="topic" required>
+                            <option value="DEFAULT" disabled>Please pick an option</option>
                             <option value="1">Quote</option>
                             <option value="2">Advice</option>
                             <option value="3">General</option>
@@ -31,9 +31,9 @@ export default function ContactForm() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="message-input">Message</label>
-                    <textarea className="form-control" id="message-input" />
+                    <textarea className="form-control" id="message-input" required />
                     </div>
-                        <button type="submit" class="btn btn-block btn-primary"><i className="fas fa-paper-plane" style={{ paddingRight: 5 }}></i>Submit</button>
+                        <button type="submit" className="btn btn-block btn-primary"><i className="fas fa-paper-plane" style={{ paddingRight: 5 }}></i>Submit</button>
                 </form>
         </div>
     )

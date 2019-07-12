@@ -1,13 +1,14 @@
 import React from 'react';
+import SEO from '../components/seo';
 
 import Layout from '../components/layout';
 
 import ContactMethod from '../components/contactMethod';
-import ContactForm from '../components/form';
 
 export default function ContactPage() {
     return (
         <Layout>
+            <SEO title="Contact" />
             <div className="container">
                 <h1 className="display-4">Contact</h1>
                 <p className="lead">If you are interested in hiring me for your next project or you would like to find out more about how I can build bespoke solutions for your business, get in touch!</p>

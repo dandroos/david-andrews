@@ -16,14 +16,11 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import Helmet from "react-helmet";
 import Background from "./background";
-import BackgroundOverlay from "./backgroundOverlay";
 
+import "./layout.css";
 import "../css/media-queries.css"
 
-
-
-  // const Layout = (props) => {
-    const Layout = ({ children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -41,7 +38,6 @@ import "../css/media-queries.css"
           paddingTop: 90
         }}>
           <Background />
-          <BackgroundOverlay />
           <Helmet>
             <script src="https://kit.fontawesome.com/e6cbd84bc2.js"></script>
           </Helmet>

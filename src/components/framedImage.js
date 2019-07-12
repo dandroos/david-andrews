@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
 export default class FramedImage extends Component {
-    constructor(props){
-        super(props)
-    }
     render() {
         return (
             <div style={{
@@ -21,7 +18,6 @@ export default class FramedImage extends Component {
                     bottom: 4,
                     left: '50%',
                     transform: 'translate(-50%)'
-
                 }}>{this.props.caption}</small>
             </div>
         )
