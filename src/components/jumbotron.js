@@ -9,7 +9,7 @@ export default function Jumbotron() {
         <Spring 
             from={{ opacity: 0}}
             to={{ opacity: 1}}
-            config={{delay: 3000}}
+            config={{delay: 2000}}
         >
         {props => (
             <div className="jumbotron" style={props}>

@@ -1,0 +1,29 @@
+$white : #E7E0DA;
+$black : #1B201F;
+$theme-colors: (
+	"primary" : #169B4F,
+);
+
+$headings-font-family: 'Cabin';
+$font-family-sans-serif:  'Source Sans Pro';
+
+$input-btn-font-size: .8rem;
+
+$btn-padding: 1rem;
+$input-btn-padding-y: $btn-padding;
+$input-btn-padding-x: $btn-padding;
+$input-btn-padding-y-lg: $btn-padding;
+$input-btn-padding-x-lg: $btn-padding;
+
+$navbar-padding-y: 1.25rem;
+$enable-rounded: false;
+.btn, .nav-link{
+	text-transform: uppercase;
+}
+
+// $body-bg: linear-gradient(to top, );
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+

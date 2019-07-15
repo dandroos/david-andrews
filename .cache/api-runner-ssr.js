@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/home/david/Desktop/My Files/Development/david-andrews/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/dave/Desktop/david-andrews/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/david/Desktop/My Files/Development/david-andrews/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/dave/Desktop/david-andrews/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"David Andrews (Web and Software Developer)","short_name":"David Andrews","start_url":"/","background_color":"#343A40","theme_color":"#343A40","display":"minimal-ui","icon":"src/images/da-logo.png"},
     },{
-      plugin: require('/home/david/Desktop/My Files/Development/david-andrews/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
+      plugin: require('/home/dave/Desktop/david-andrews/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

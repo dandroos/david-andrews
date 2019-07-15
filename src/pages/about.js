@@ -1,16 +1,13 @@
 import React from "react"
 import SEO from '../components/seo';
 
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
 import Layout from "../components/layout";
-import FramedImage from "../components/framedImage";
 import Principle from "../components/principle";
 
-import image1 from "../images/dave-at-computer-colour.jpg";
-import image2 from "../images/dave-with-bungle.jpg";
-import image3 from "../images/dave-with-franky-mirrored.jpg";
-import image4 from "../images/bike.jpg";
-
-const AboutPage = () => (
+const AboutPage = (props) => (
   <Layout>
     <SEO title="About" />
       <div className="container">
@@ -18,7 +15,7 @@ const AboutPage = () => (
         <p className="lead">Before you decide to hire me for your project, you probably want to know a little bit more about who I am....</p>
         <div className="row">
           <div className="mb-3 col-sm">
-            <FramedImage src={image1} alt="David at his computer" caption="Me in my lab!"/>
+          <Img fluid ={props.data.imageOne.childImageSharp.fluid } alt="Dave at the computer" />
           </div>
         </div>
         <p>
@@ -32,10 +29,10 @@ const AboutPage = () => (
         </p>
         <div className="mb-3 row">
           <div className="col-sm">
-            <FramedImage src={image2} alt="Dave with Bungle the Bardino" caption="Bungle the bardino"/>
+          <Img fluid ={props.data.imageTwo.childImageSharp.fluid} alt="Dave with Bungle the Bardino" />
           </div>
           <div className="col-sm">
-            <FramedImage src={image3} alt="Dave with Aura the Malinois" caption="Franky the bardino"/>
+          <Img fluid ={props.data.imageThree.childImageSharp.fluid} alt="Dave with Franky the Bardino" />
           </div>
         </div>
         <p>
@@ -43,7 +40,7 @@ const AboutPage = () => (
         </p>
         <div className="row">
           <div className="mb-3 col-sm">
-            <FramedImage src={image4} alt="Dave's bike in Fuerteventura" caption="Cycling Fuerteventura!"/>
+          <Img fluid ={props.data.imageFour.childImageSharp.fluid} alt="Dave's bike in Fuerteventura" />
           </div>
         </div>
         <div>
@@ -72,3 +69,30 @@ const AboutPage = () => (
 )
 
 export default AboutPage
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1600) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "dave-at-computer-colour.jpg" }) {
+      ...fluidImage
+    }
+    imageTwo: file(relativePath: { eq: "dave-with-bungle.jpg" }) {
+      ...fluidImage
+    }
+    imageThree: file(relativePath: { eq: "dave-with-franky-mirrored.jpg" }) {
+      ...fluidImage
+    }
+    imageFour: file(relativePath: { eq: "bike.jpg" }) {
+      ...fluidImage
+    }
+  }
+`
