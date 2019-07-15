@@ -3,7 +3,8 @@ import React from 'react'
 export default function ContactForm() {
     return (
         <div>
-            <form method="POST" data-netlify="true" name="contact">
+            <form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="bot-field" />
                 <div className="row">
                     <div className="form-group col-sm">
                         <label htmlFor="name-input">Name</label>
