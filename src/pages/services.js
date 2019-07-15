@@ -1,11 +1,13 @@
 import React from 'react';
 import SEO from '../components/seo';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
 
 import Service from '../components/service';
 
-export default function ServicesPage() {
+export default function ServicesPage(props) {
     const descriptions = {
         websites : `<p>I have been creating websites since 1998. Back then, what you could achieve was fairly limited and therefore the process was relatively straightforward.</p> Today, there is so much you can do with the web and so the learning curve has become much steeper.  I have studied and gained invaluable knowledge in the fundamental technologies/languages, including:
         </p>
@@ -47,6 +49,7 @@ export default function ServicesPage() {
             <div className="container">
                 <h1 className="display-4">Services</h1>
                 <p className="lead">How can I help you?</p>
+                <Img fluid={props.data.imageOne.childImageSharp.fluid} />
                 <div>
                     <hr/>
                 </div>
@@ -73,3 +76,21 @@ export default function ServicesPage() {
         </Layout>
     )
 }
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "services.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

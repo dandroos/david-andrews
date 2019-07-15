@@ -10,16 +10,9 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-// import "./layout.css"
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.min.js";
 
 import Helmet from "react-helmet";
 
-// import "./layout.css";
-// import "../css/style.scss";
-// import "../css/media-queries.css";
-// import "../css/style.css"
 
 const Layout = props => {
   const data = useStaticQuery(graphql`
