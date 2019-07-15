@@ -21,7 +21,7 @@ export default function ContactForm() {
                     </div>
                     <div className="form-group col-sm">
                         <label htmlFor="topic">Topic</label>
-                        <select defaultValue="DEFAULT" className="custom-select" name="topic" id="topic" required>
+                        <select defaultValue="DEFAULT" className="custom-select" name="topic[]" id="topic" required>
                             <option value="DEFAULT" disabled>Please pick an option</option>
                             <option value="1">Quote</option>
                             <option value="2">Advice</option>
@@ -33,7 +33,6 @@ export default function ContactForm() {
                     <label htmlFor="message-input">Message</label>
                     <textarea className="form-control" name="message" id="message-input" required />
                     </div>
-                    <div data-netlify-recaptcha="true" />
                         <button type="submit" className="btn btn-block btn-primary"><i className="fas fa-paper-plane" style={{ paddingRight: 5 }}></i>Submit</button>
                 </form>
         </div>
