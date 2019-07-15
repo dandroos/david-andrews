@@ -15,7 +15,7 @@ export default function ContactPage() {
                 <div className="row">
                     <div className="col-sm">
                         <ContactMethod title="Telephone" contact="+34 658 858 572"
-                            description="Please feel free to call me between 8am and 6pm (GMT) or send me a message via WhatsApp at any time." icon="fas fa-phone"
+                            description="Please feel free to call me between 8am and 6pm (GMT) or send me a message via WhatsApp at any time." icon="fas fa-mobile-alt"
                             link="tel:34658858572" link_text="Call me" link2="https://wa.me/34658858572" link_text2="WhatsApp me" icon2="fab fa-whatsapp"/>
                     </div>
                     <div className="col-sm">

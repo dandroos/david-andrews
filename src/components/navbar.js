@@ -24,22 +24,22 @@ export default function Navbar({ title }) {
 
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <AniLink fade to="/" duration={.85} className="nav-link" activeClassName="active" onClick={handleClick}>Home</AniLink>
+                            <AniLink fade to="/" duration={.85} className="nav-link hover-effect" activeClassName="active" onClick={handleClick}>Home</AniLink>
                         </li>
                         <li className="nav-item">
-                            <AniLink fade to="/services" duration={.85} className="nav-link" activeClassName="active" onClick={handleClick}>Services</AniLink>
+                            <AniLink fade to="/services" duration={.85} className="nav-link hover-effect" activeClassName="active" onClick={handleClick}>Services</AniLink>
                         </li>
                         <li className="nav-item">
-                            <AniLink fade to="/about" duration={.85} className="nav-link" activeClassName="active" onClick={handleClick}>About</AniLink>
+                            <AniLink fade to="/about" duration={.85} className="nav-link hover-effect" activeClassName="active" onClick={handleClick}>About</AniLink>
                         </li>
 
                         <li className="nav-item">
-                            <AniLink fade to="/contact" duration={.85} className="nav-link" activeClassName="active" onClick={handleClick}>Contact</AniLink>
+                            <AniLink fade to="/contact" duration={.85} className="nav-link hover-effect" activeClassName="active" onClick={handleClick}>Contact</AniLink>
                         </li>
                         <li className="nav-item">
-                            <AniLink fade to="/articles" duration={.85} className="nav-link" activeClassName="active" onClick={handleClick}>Articles</AniLink>
+                            <AniLink fade to="/articles" duration={.85} className="nav-link hover-effect" activeClassName="active" onClick={handleClick}>Articles</AniLink>
                         </li>
-                        <li className="nav-item dropdown">
+                        <li className="nav-item dropdown hover-effect">
                             {
                                 // eslint-disable-next-line
                             }<a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

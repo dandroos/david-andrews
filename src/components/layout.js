@@ -49,8 +49,8 @@ const Layout = props => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="pt-4 pb-4">{props.children}</main>
       <footer
-        className="text-center fixed-bottom"
-        style={{ background: "white", fontSize: "10px" }}
+        className="text-center fixed-bottom bg-dark text-light"
+        style={{ fontSize: "10px" }}
       >
         ©{new Date().getFullYear()} David Andrews
       </footer>

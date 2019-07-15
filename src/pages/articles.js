@@ -13,6 +13,9 @@ function ArticlesPage({data}) {
             <div className="container">
                 <h1 className="display-4">Articles</h1>
                 <p className="lead">Here is where I publish tutorials, ramblings and rants!</p>
+                <div>
+                    <hr/>
+                </div>
                 {data.allMarkdownRemark.edges.map(post => (
                     <div key={post.node.id}>
                         <h3 className="display-5">{post.node.frontmatter.title}</h3>
