@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-articles-js": () => import("/home/dave/Desktop/david-andrews/src/pages/articles.js" /* webpackChunkName: "component---src-pages-articles-js" */),
   "component---src-pages-contact-js": () => import("/home/dave/Desktop/david-andrews/src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-index-js": () => import("/home/dave/Desktop/david-andrews/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-services-js": () => import("/home/dave/Desktop/david-andrews/src/pages/services.js" /* webpackChunkName: "component---src-pages-services-js" */)
+  "component---src-pages-services-js": () => import("/home/dave/Desktop/david-andrews/src/pages/services.js" /* webpackChunkName: "component---src-pages-services-js" */),
+  "component---src-pages-success-js": () => import("/home/dave/Desktop/david-andrews/src/pages/success.js" /* webpackChunkName: "component---src-pages-success-js" */)
 }
 

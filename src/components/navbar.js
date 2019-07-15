@@ -2,7 +2,7 @@ import React from 'react';
 import { TransitionPortal } from "gatsby-plugin-transition-link";
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import $ from 'jquery';
-import SocialBar from './socialBar';
+import SocialLinks from './socialLinks';
 export default function Navbar({ title }) {
 
     function handleClick(e) {
@@ -43,9 +43,9 @@ export default function Navbar({ title }) {
                             {
                                 // eslint-disable-next-line
                             }<a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Links
+                                My Links
                             </a>
-                            <SocialBar />
+                            <SocialLinks />
                         </li>
                     </ul>
                 </div>

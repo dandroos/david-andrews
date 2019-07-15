@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialButton from './socialButton';
 
-export default function SocialBar() {
+export default function SocialLinks() {
     return (
         <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
             <SocialButton icon="fab fa-facebook-square" label="Facebook" link="https://www.facebook.com/dave.andrews.10004694" />

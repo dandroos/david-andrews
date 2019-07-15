@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-articles-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/articles.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/index.js"))),
-  "component---src-pages-services-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/services.js")))
+  "component---src-pages-services-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/services.js"))),
+  "component---src-pages-success-js": hot(preferDefault(require("/home/dave/Desktop/david-andrews/src/pages/success.js")))
 }
 
