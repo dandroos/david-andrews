@@ -10,10 +10,10 @@ import Jumbotron from "../components/jumbotron";
 
 const IndexPage = (props) => {
 	const sources = [
-		props.data.imageOne.childImageSharp.fluid,
+		props.data.imageTwo.childImageSharp.fluid,
 		{
-			...props.data.imageTwo.childImageSharp.fluid,
-			media: '(max-width: 600px)',
+			...props.data.imageOne.childImageSharp.fluid,
+			media: '(orientation: landscape)'
 		},
 	]
 
@@ -55,7 +55,7 @@ export const desktopBgImage = graphql`
 	fragment desktopBgImage on File {
 		childImageSharp {
 			fluid(maxWidth: 1800) {
-				...GatsbyImageSharpFluid
+				...GatsbyImageSharpFluid_noBase64
 			}
 		}
 	}

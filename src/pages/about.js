@@ -101,6 +101,12 @@ const AboutPage = props => (
           at all times...
         </p>
         <ul className="list-group">
+        <li className="list-group-item">
+            <Principle
+              title="Mobile Optimisation"
+              description="Recent statistics show that the majority of people browse the internet from a mobile device and that 43% of consumers are unlikely to return to a slow-loading mobile site. This shows the importance of mobile optimisation.  I ensure my web content is optimsed.  As well as adjusting layouts to look just as great on a small mobile phone screen as they would on a desktop monitor (try it with this site!), images and video require careful attention so that your site/app can load quickly!"
+            />
+          </li>
           <li className="list-group-item">
             <Principle
               title="Keep It Simple, Stupid! (K.I.S.S.)"

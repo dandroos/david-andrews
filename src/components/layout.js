@@ -33,11 +33,11 @@ const Layout = props => {
       }}
     >
       <Helmet>
+        <meta http-equiv="Cache-Control" content="max-age=200" />
         <link
           href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro&display=swap"
           rel="stylesheet"
         />
-        <script src="https://kit.fontawesome.com/e6cbd84bc2.js"></script>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="pt-4 pb-4">{props.children}</main>
@@ -47,6 +47,7 @@ const Layout = props => {
       >
         ©{new Date().getFullYear()} David Andrews
       </footer>
+      <script src="https://kit.fontawesome.com/e6cbd84bc2.js"></script>
     </div>
   );
 };

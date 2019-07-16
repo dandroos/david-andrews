@@ -19,7 +19,8 @@ $navbar-brand-font-size: 1.5rem;
 $input-btn-font-size: .8rem;
 $input-btn-font-size-lg: .8rem;
 
-$link-hover-color: darken($primary-colour, 25%) !default;
+// $link-hover-color: darken($primary-colour, 25%) !default;
+// $link-hover-color: $secondary-colour;
 
 $btn-padding: .75rem;
 $input-btn-padding-y: $btn-padding;
@@ -84,11 +85,46 @@ h1, h2, h3, h4, h5, h6{
 
 .btn{
 	letter-spacing: .1rem;
+	transition: all .25s;
+	&:hover, &:focus{
+		transform: translateY(-5px);
+	}
+}
+
+
+
+@media(min-width: 1001px){
+	.jumbotron{
+    width: 50%;
+    right: 45px;
+    position: absolute;
+    bottom: 45px;
+    padding: 2rem;
+}
 }
 
 @media(max-width: 1000px){
 	.hover-effect:hover::after{
 		opacity: 0;
+
+	}
+	.jumbotron{
+		width: auto;
+		right: auto;
+		position: auto;
+		bottom: auto;
+	}
+}
+
+@media(max-width: 376px) and (max-height: 668px){
+	html{
+		font-size: .85rem;
+	}
+}
+
+@media(max-width: 321px) and (max-height: 569px){
+	html{
+		font-size: .83rem;
 	}
 }
 
