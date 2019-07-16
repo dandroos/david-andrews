@@ -33,7 +33,6 @@ const Layout = props => {
       }}
     >
       <Helmet>
-        <meta http-equiv="Cache-Control" content="max-age=200" />
         <link
           href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro&display=swap"
           rel="stylesheet"
