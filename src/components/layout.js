@@ -13,6 +13,9 @@ import Header from "./header";
 
 import Helmet from "react-helmet";
 
+import config from 'react-reveal/globals';
+config({ ssrFadeout: true });
+
 const Layout = props => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
