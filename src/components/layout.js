@@ -13,7 +13,6 @@ import Header from "./header";
 
 import Helmet from "react-helmet";
 
-
 const Layout = props => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -37,6 +36,7 @@ const Layout = props => {
           href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro&display=swap"
           rel="stylesheet"
         />
+        <script src="https://kit.fontawesome.com/e6cbd84bc2.js"></script>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="pt-4 pb-4">{props.children}</main>
@@ -46,7 +46,6 @@ const Layout = props => {
       >
         ©{new Date().getFullYear()} David Andrews
       </footer>
-      <script src="https://kit.fontawesome.com/e6cbd84bc2.js"></script>
     </div>
   );
 };

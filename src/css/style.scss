@@ -3,8 +3,6 @@ $black : #1B201F;
 $primary-colour: #169B4F;
 $secondary-colour: #6CBCC1;
 
-// $body-bg: rgba($secondary-colour, .5);
-
 $theme-colors: (
 	"primary" : $primary-colour,
 	"secondary" : $secondary-colour
@@ -19,17 +17,13 @@ $navbar-brand-font-size: 1.5rem;
 $input-btn-font-size: .8rem;
 $input-btn-font-size-lg: .8rem;
 
-// $link-hover-color: darken($primary-colour, 25%) !default;
-// $link-hover-color: $secondary-colour;
-
 $btn-padding: .75rem;
 $input-btn-padding-y: $btn-padding;
 $input-btn-padding-x: $btn-padding;
 $input-btn-padding-y-lg: $btn-padding * 1.75;
 $input-btn-padding-x-lg: $btn-padding * 1.75;
 
-$btn-transition:              color .35s ease-in-out, background-color .35s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-
+$btn-transition: color .35s ease-in-out, background-color .35s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 $navbar-padding-y: 1.25rem;
 $navbar-nav-link-padding-x: 1.5rem;
@@ -37,12 +31,12 @@ $enable-rounded: false;
 
 $jumbotron-bg: rgba($white, .9);
 
-.btn, .nav-link{
-	text-transform: uppercase;
-}
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+body{
+	cursor: default;
+}
 
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
@@ -92,6 +86,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+.btn, .nav-link{
+	text-transform: uppercase;
+}
+
+.fundamental-card{
+	background-color: lighten($white, 5%);
+}
 
 @media(min-width: 1001px){
 	.jumbotron{
