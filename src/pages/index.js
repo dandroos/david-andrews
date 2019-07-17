@@ -21,6 +21,7 @@ const IndexPage = props => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       {!props.transitionStatus === "entered" ? null : (
         <Fade delay={process.env.PAGE_TRANSITION_DURATION * 1000}>
           <div
@@ -49,10 +50,9 @@ const IndexPage = props => {
               }}
             />
           </div>
+          <Jumbotron />
         </Fade>
       )}
-      <SEO title="Home" />
-      <Jumbotron />
     </Layout>
   );
 };
