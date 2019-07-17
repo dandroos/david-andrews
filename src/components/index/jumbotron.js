@@ -5,7 +5,9 @@ import Fade from "react-reveal/Fade";
 
 export default function Jumbotron() {
   return (
-    <Fade delay={1200}>
+    <Fade delay={1200} style={{
+      opacity: 0
+    }}>
       <div className="jumbotron">
         <h1 className="display-4 mt-4">Hello!</h1>
         <p className="lead">I am a professional web/app developer</p>
