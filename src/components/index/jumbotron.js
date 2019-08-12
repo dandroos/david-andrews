@@ -1,7 +1,6 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import Fade from "react-reveal/Fade";
 import { Spring } from "react-spring/renderprops";
 
 export default function Jumbotron() {
